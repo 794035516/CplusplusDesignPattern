@@ -1,6 +1,6 @@
 #include<iostream>
-#include"strategy.h"
-int arr[] = {1};
+#include"runCPP.h"
+int arr[] = {1, 2};
 
 
 int putMessage()
@@ -8,6 +8,7 @@ int putMessage()
     std::cout<<"-----------------------------"<<std::endl;
     std::cout<<"-1: quit the game"<<std::endl;
     std::cout<<" 1: strategy mode"<<std::endl;
+    std::cout<<" 2: observer mode"<<std::endl;
     std::cout<<"-----------------------------"<<std::endl;
     std::cout<<"input a number you want to rum the dessign pattern code"<<std::endl;
     return 0;
@@ -48,7 +49,11 @@ int main()
         }
         if(choose == 1)
         {
-            runStrategy();
+            RunCPP::runStrategy();
+        }
+        else if(choose == 2)
+        {
+            RunCPP::runObserver();
         }
     }
 

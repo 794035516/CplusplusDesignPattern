@@ -32,10 +32,6 @@ class EatWithSwallow : public EatAction{
     void eat();
 };
 
-
-
-int runStrategy();
-
 class Animal{
  public:
     Animal();
@@ -71,3 +67,6 @@ class Bird : public Animal
     Bird();
     int display();
 };
+
+
+int runStrategy();

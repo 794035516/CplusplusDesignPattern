@@ -1,10 +1,16 @@
+#ifndef _IOSTREAM_H_
 #include<iostream>
+#endif
+#ifndef _STDLIB_H_
 #include<stdlib.h>
+#endif
+#ifndef _STRATEGY_H_
 #include"strategy.h"
-//class Animal{
+#endif
+
 Animal::Animal(){
-    this->flyAction = new FlyNope();
-    this->eatAction = new EatNope();
+    flyAction = new FlyNope();
+    eatAction = new EatNope();
 }
 
 Animal::Animal(FlyAction* flyAction, EatAction* eatAction)
@@ -106,28 +112,5 @@ Bird::Bird()
 int Bird::display()
 {
     std::cout<<"I am a bird"<<std::endl;
-    return 0;
-}
-
-int runStrategy()
-{
-    FlyAction* fno = new FlyNope();
-    FlyAction* fth = new FlyWithThrow();
-    FlyAction* fwi = new FlyWithWings();
-    EatAction* eno = new EatNope();
-    EatAction* esw = new EatWithSwallow();
-    EatAction* ete = new EatWithTeeth();
-    Animal* dog = new Dog();
-    Animal* bird = new Bird();
-    dog->performEat();
-    dog->performFly();
-    dog->setFlyAction(fth);
-    dog->performFly();
-    dog->setEatAction(eno);
-    dog->performEat();
-    dog->setFlyAction(fwi);
-    dog->performFly();
-    dog->setEatAction(ete);
-    dog->performEat();
     return 0;
 }
