@@ -2,7 +2,13 @@
 #include"include/runCPP.h"
 #endif
 
-int RunCPP::runStrategy()
+int RunSpace::runError()
+{
+    std::cout<<"quit the game"<<std::endl;
+    return -1;
+}
+
+int RunSpace::runStrategy()
 {
     FlyAction* fnope = new FlyNope();
     FlyAction* fthrow = new FlyWithThrow();
@@ -30,7 +36,7 @@ int RunCPP::runStrategy()
     return 0;
 }
 
-int RunCPP::runObserver()
+int RunSpace::runObserver()
 {
     News* news = new News();
     Observer* p1 = new People("p1");
@@ -49,7 +55,7 @@ int RunCPP::runObserver()
     return 0;
 }   
 
-int RunCPP::runDecorator()
+int RunSpace::runDecorator()
 {
     Beverage* milk = new Milk();
     Soy* milk1 = new Soy(milk);
@@ -70,4 +76,63 @@ int RunCPP::runDecorator()
     cola3->showDecoration();
     cola3->showName();
     return 0;
+}
+
+
+void RunCPP::setDoFuns(int num, std::function<int()> fun)
+{
+    doFuns.insert(std::pair<int, std::function<int()>>(num, fun));
+    return;
+}
+
+void RunCPP::setShowFuns(int num, std::string str)
+{
+    showFuns.insert(std::pair<int, std::string>(num, str));
+    return;
+}
+
+std::function<int()> RunCPP::getDoFuns(int num) const
+{
+    return doFuns.at(num);
+}
+
+std::string RunCPP::getShowFuns(int num) const
+{
+    return showFuns.at(num);
+}
+
+std::map<int, std::string> RunCPP::getAllShowFuns() const
+{
+    return showFuns;
+}
+
+RunCPP::RunCPP()
+{
+    if(!doFuns.empty())
+    {
+        doFuns.clear();
+    }
+    setDoFuns(-1, RunSpace::runError);
+    setDoFuns(1, RunSpace::runStrategy);
+    setDoFuns(2, RunSpace::runObserver);
+    setDoFuns(3, RunSpace::runDecorator);
+    if(!showFuns.empty())
+    {
+        showFuns.clear();
+    }
+    setShowFuns(-1, "error input");
+    setShowFuns(1, "Strategy mode");
+    setShowFuns(2, "Observer mode");
+    setShowFuns(3, "Decorator mode");
+}
+
+
+RunCPP* RunCPP::singletonInstance = nullptr;
+RunCPP* RunCPP::getInstance()
+{
+    if(RunCPP::singletonInstance == nullptr)
+    {
+        singletonInstance = new RunCPP();
+    }
+    return RunCPP::singletonInstance;
 }

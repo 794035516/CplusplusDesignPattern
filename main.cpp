@@ -1,4 +1,5 @@
 #include<iostream>
+#include<map>
 #include"include/runCPP.h"
 int arr[] = {1, 2, 3};
 
@@ -6,19 +7,13 @@ int arr[] = {1, 2, 3};
 int putMessage()
 {
     std::cout<<"-----------------------------"<<std::endl;
-    std::cout<<"-1: quit the game"<<std::endl;
-    std::cout<<" 1: strategy mode"<<std::endl;
-    std::cout<<" 2: observer mode"<<std::endl;
-    std::cout<<" 3: decorator mode"<<std::endl;
+    for(auto& it: RunCPP::getInstance()->getAllShowFuns())
+    {
+        printf("%d: run %s\n", it.first, it.second.c_str());
+    }
     std::cout<<"-----------------------------"<<std::endl;
     std::cout<<"input a number you want to rum the dessign pattern code: ";
     return 0;
-}
-
-void putError()
-{
-    std::cout<<"some error occur"<<std::endl;
-    return ;
 }
 
 int getMessage()
@@ -26,9 +21,9 @@ int getMessage()
     int number = 0;
     std::cin>>number;
     int len = sizeof(arr);
-    for(int i=0; i<len; i++)
+    for(std::pair<int, std::string> it: RunCPP::getInstance()->getAllShowFuns())
     {
-        if(number == arr[i])
+        if(it.first == number)
         {
             return number;
         }
@@ -38,32 +33,16 @@ int getMessage()
 
 int main()
 {
-
+    RunCPP* runcpp = RunCPP::getInstance();
     while(true)
     {
         putMessage();
         int choose = getMessage();
-        if(choose <= -1)
+        int flag = runcpp->getDoFuns(choose)();
+        if(flag != 0)
         {
-            putError();
             break;
         }
-        if(choose == 1)
-        {
-            RunCPP::runStrategy();
-        }
-        else if(choose == 2)
-        {
-            RunCPP::runObserver();
-        }
-        else if(choose == 3)
-        {
-            RunCPP::runDecorator();
-        }
     }
-
     return 0;
 }
- /*
-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
- */

@@ -1,5 +1,11 @@
-main : main.cpp runCPP.o strategy.o observer.o decorator.o
-	g++  $^ -o $@
+OBJS =  runCPP.o \
+		strategy.o \
+		observer.o \
+		decorator.o \
+		main.o:w
+
+main : main.cpp $(OBJS)
+	g++ $^ -o $@
 
 runCPP.o : runCPP.cpp 
 	g++ -c $^

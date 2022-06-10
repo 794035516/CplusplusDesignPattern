@@ -1,3 +1,4 @@
 # this is a gitignore file ,defined which file I donot want to commit to the git
+# git personal token access
 *.o
 main
