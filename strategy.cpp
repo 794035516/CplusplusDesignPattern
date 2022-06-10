@@ -5,7 +5,7 @@
 #include<stdlib.h>
 #endif
 #ifndef _STRATEGY_H_
-#include"strategy.h"
+#include"include/strategy.h"
 #endif
 
 Animal::Animal(){

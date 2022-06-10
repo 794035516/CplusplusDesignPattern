@@ -1,4 +1,4 @@
-main : main.cpp runCPP.o strategy.o observer.o
+main : main.cpp runCPP.o strategy.o observer.o decorator.o
 	g++  $^ -o $@
 
 runCPP.o : runCPP.cpp 
@@ -8,6 +8,9 @@ strategy.o : strategy.cpp
 	g++ -c $^
 
 observer.o : observer.cpp
+	g++ -c $^
+
+decorator.o : decorator.cpp
 	g++ -c $^
 
 

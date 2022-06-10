@@ -1,3 +1,6 @@
+/*
+fly action in the animal to dynamically arrange
+*/
 class FlyAction{
 public:
     virtual void fly();
@@ -15,6 +18,9 @@ class FlyNope : public FlyAction{
     void fly();
 };
 
+/*
+eat action in the animal to dynamically arrange
+*/
 class EatAction{
 public:
     virtual void eat();
@@ -32,6 +38,9 @@ class EatWithSwallow : public EatAction{
     void eat();
 };
 
+/*
+animal has 2 action can be dynamically arranged
+*/
 class Animal{
  public:
     Animal();
@@ -67,6 +76,3 @@ class Bird : public Animal
     Bird();
     int display();
 };
-
-
-int runStrategy();

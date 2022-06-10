@@ -5,17 +5,25 @@
 #include<vector>
 #endif
 
+/*
+observer get message from Subject through method update
+*/
 class Observer
 {
  public:
+ // get message
    virtual int update(char sex, int age, std::string name) = 0;
    virtual std::string getPara();
 
    Observer();
  protected:
+  //specified data to distinguish observers
    std::string para;
 };
 
+/*
+some message in the specific class
+*/
 class People : public Observer
 {
  public:
@@ -32,6 +40,9 @@ class People : public Observer
    std::string name;
 };
 
+/*
+subject which can operate observers through register, remove, show and notify
+*/
 class Subject
 {
  public:
@@ -47,6 +58,9 @@ class Subject
    std::vector<Observer*> observers;
 };
 
+/*
+include method: simulate the data to notify observers 
+*/
 class News : public Subject
 {
  public:

@@ -1,6 +1,6 @@
 #include<iostream>
-#include"runCPP.h"
-int arr[] = {1, 2};
+#include"include/runCPP.h"
+int arr[] = {1, 2, 3};
 
 
 int putMessage()
@@ -9,8 +9,9 @@ int putMessage()
     std::cout<<"-1: quit the game"<<std::endl;
     std::cout<<" 1: strategy mode"<<std::endl;
     std::cout<<" 2: observer mode"<<std::endl;
+    std::cout<<" 3: decorator mode"<<std::endl;
     std::cout<<"-----------------------------"<<std::endl;
-    std::cout<<"input a number you want to rum the dessign pattern code"<<std::endl;
+    std::cout<<"input a number you want to rum the dessign pattern code: ";
     return 0;
 }
 
@@ -55,7 +56,14 @@ int main()
         {
             RunCPP::runObserver();
         }
+        else if(choose == 3)
+        {
+            RunCPP::runDecorator();
+        }
     }
 
     return 0;
 }
+ /*
+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
+ */
