@@ -1,7 +1,7 @@
 #include<iostream>
 #include<map>
 #include"include/runCPP.h"
-int arr[] = {1, 2, 3};
+int arr[] = {1, 2, 3, 4};
 
 
 int putMessage()
@@ -37,7 +37,7 @@ int main()
     while(true)
     {
         putMessage();
-        int choose = getMessage();
+        int choose = ::getMessage();
         int flag = runcpp->getDoFuns(choose)();
         if(flag != 0)
         {

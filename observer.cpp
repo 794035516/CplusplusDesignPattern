@@ -87,7 +87,7 @@ int News::notifyObservers()
     char sex;
     int age;
     std::string name;
-    getMessage(sex, age, name);
+    News::getMessage(sex, age, name);
     for(int i = 0; i < len; i++)
     {
         observers.at(i)->update(sex, age, name);

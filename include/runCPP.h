@@ -13,6 +13,9 @@
 #ifndef _DECORATOR_H_
 #include"decorator.h"
 #endif
+#ifndef _COMMAND_H_
+#include"command.h"
+#endif
 
 /* 
 run the program 
@@ -24,6 +27,7 @@ namespace RunSpace
     int runStrategy();
     int runObserver();
     int runDecorator();
+    int runCommands();
 };
 
 class RunCPP

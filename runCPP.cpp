@@ -78,6 +78,95 @@ int RunSpace::runDecorator()
     return 0;
 }
 
+int RunSpace::runCommands()
+{
+    std::vector<Command*> onCommand(5);
+    std::vector<Command*> offCommand(5);
+    std::cout<<"initialize noCommand"<<std::endl;
+    for(int i = 0; i < onCommand.size();i++)
+    {
+        onCommand.at(i) = new NoCommand();
+    }
+    for(int i = 0; i < offCommand.size();i++)
+    {
+        offCommand.at(i) = new NoCommand();
+    }
+    onCommand.at(2)->run();
+    std::cout<<"set part value"<<std::endl;
+
+    TV* tv = new TV("television");
+    Music* music = new Music("Jay");
+    Light* light = new Light("intelligence");
+    Machine* machine = new Machine("xiao ai");
+
+    MusicParty* musicParty = new MusicParty("happy music", music, light, tv);
+    MovieParty* movieParty = new MovieParty("silence movie", machine, tv, light);
+
+    MusicOnCommand* musicOn = new MusicOnCommand(music);
+    MusicOffCommand* musicOff = new MusicOffCommand(music);
+    LightOnCommand* lightOn = new LightOnCommand(light);
+    LightOffCommand* lightOff = new LightOffCommand(light);
+    TVOnCommand* tvOn = new TVOnCommand(tv);
+    TVOffCommand* tvOff = new TVOffCommand(tv);
+    MachineOnCommand* machineOn = new MachineOnCommand(machine);
+    MachineOffCommand* machineOff = new MachineOffCommand(machine);
+
+    MusicPartyOnMacCMD* musicPartyOn = new MusicPartyOnMacCMD(musicParty);
+    MusicPartyOffMacCMD* musicPartyOff = new MusicPartyOffMacCMD(musicParty);
+
+    MoviePartyOnMacCMD* moviePartyOn = new MoviePartyOnMacCMD(movieParty);
+    MoviePartyOffMacCMD* moviePartyyOff = new MoviePartyOffMacCMD(movieParty);
+
+    NoCommand* noCommand = new NoCommand();
+
+    onCommand.at(0) = musicOn;
+    onCommand.at(1) = tvOn;
+    onCommand.at(3) = lightOn;
+    onCommand.at(4) = moviePartyOn;
+
+    offCommand.at(0) = musicOff;
+    offCommand.at(1) = tvOff;
+    offCommand.at(3) = lightOff;
+    offCommand.at(4) = moviePartyyOff;
+
+    std::cout<<"iterator onCommand run"<<std::endl;
+    for(Command* i : onCommand)
+    {
+        i->run();
+    }
+
+    std::cout<<"iterator onCommand undo"<<std::endl;
+    for(Command* i : onCommand)
+    {
+        i->undo();
+    }
+    std::cout<<"iterator offCommand run"<<std::endl;
+    for(Command* i : offCommand)
+    {
+        i->run();
+    }
+    std::cout<<"iterator offCommand undo"<<std::endl;
+    for(Command* i : offCommand)
+    {
+        i->undo();
+    }
+
+    onCommand.at(3) = machineOn;
+    offCommand.at(3) = machineOff;
+
+    onCommand.at(4) = musicPartyOn;
+    offCommand.at(4) = musicPartyOff;
+    for(Command* i : onCommand)
+    {
+        i->run();
+    }
+    for(Command* i : offCommand)
+    {
+        i->run();
+    }
+
+    return 0;
+}
 
 void RunCPP::setDoFuns(int num, std::function<int()> fun)
 {
@@ -116,6 +205,7 @@ RunCPP::RunCPP()
     setDoFuns(1, RunSpace::runStrategy);
     setDoFuns(2, RunSpace::runObserver);
     setDoFuns(3, RunSpace::runDecorator);
+    setDoFuns(4, RunSpace::runCommands);
     if(!showFuns.empty())
     {
         showFuns.clear();
@@ -124,6 +214,7 @@ RunCPP::RunCPP()
     setShowFuns(1, "Strategy mode");
     setShowFuns(2, "Observer mode");
     setShowFuns(3, "Decorator mode");
+    setShowFuns(4, "Command mode");
 }
 
 
