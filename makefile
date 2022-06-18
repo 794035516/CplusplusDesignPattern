@@ -1,4 +1,4 @@
-OBJS =  runCPP.o   strategy.o    observer.o   decorator.o  command.o
+OBJS =  runCPP.o   strategy.o    observer.o   decorator.o  command.o  adapter.o
 	
 
 main : main.cpp $(OBJS)
@@ -18,6 +18,9 @@ decorator.o : decorator.cpp
 	
 command.o : command.cpp
 	g++ -c $^	
+
+adapter.o : adapter.cpp
+	g++ -c $^
 
 
 clean:

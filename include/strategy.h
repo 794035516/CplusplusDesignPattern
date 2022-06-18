@@ -1,3 +1,4 @@
+#pragma once
 /*
 fly action in the animal to dynamically arrange
 */

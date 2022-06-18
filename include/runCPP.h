@@ -1,21 +1,20 @@
-#ifndef _MAP_H_
+#pragma once
 #include<map>
-#endif
-#ifndef _FUNCTIONAL_
 #include<functional>
-#endif
-#ifndef _STRATEGY_H_
 #include"strategy.h"
-#endif
-#ifndef _OBSERVER_H_
 #include"observer.h"
-#endif
-#ifndef _DECORATOR_H_
 #include"decorator.h"
-#endif
-#ifndef _COMMAND_H_
 #include"command.h"
-#endif
+#include"adapter.h"
+
+enum Mode
+{
+   STRATEGY = 1,
+   OBSERVER,
+   DECORATOR,
+   COMMANDS,
+   ADAPTER
+};
 
 /* 
 run the program 
@@ -28,6 +27,7 @@ namespace RunSpace
     int runObserver();
     int runDecorator();
     int runCommands();
+    int runAdapter();
 };
 
 class RunCPP

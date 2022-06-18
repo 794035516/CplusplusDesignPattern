@@ -1,4 +1,4 @@
-#ifndef _RUNMODE_H_
+#ifndef _RUNCPP_H_
 #include"include/runCPP.h"
 #endif
 
@@ -134,7 +134,6 @@ int RunSpace::runCommands()
     {
         i->run();
     }
-
     std::cout<<"iterator onCommand undo"<<std::endl;
     for(Command* i : onCommand)
     {
@@ -167,6 +166,17 @@ int RunSpace::runCommands()
 
     return 0;
 }
+
+int RunSpace::runAdapter()
+{
+    Dog* dog = new Dog();
+    Turkey* turkey = new DogAdapter(dog);
+    std::cout<<"dog display: "<<dog->display();
+    std::cout<<"dog adapts to turkey show method: "<<turkey->show(); 
+    std::cout<<"dog adapts to turkey display method: "<<turkey->display();
+    return 0;
+}
+
 
 void RunCPP::setDoFuns(int num, std::function<int()> fun)
 {
@@ -202,19 +212,21 @@ RunCPP::RunCPP()
         doFuns.clear();
     }
     setDoFuns(-1, RunSpace::runError);
-    setDoFuns(1, RunSpace::runStrategy);
-    setDoFuns(2, RunSpace::runObserver);
-    setDoFuns(3, RunSpace::runDecorator);
-    setDoFuns(4, RunSpace::runCommands);
+    setDoFuns(STRATEGY , RunSpace::runStrategy);
+    setDoFuns(OBSERVER , RunSpace::runObserver);
+    setDoFuns(DECORATOR, RunSpace::runDecorator);
+    setDoFuns(COMMANDS , RunSpace::runCommands);
+    setDoFuns(ADAPTER , RunSpace::runAdapter);
     if(!showFuns.empty())
     {
         showFuns.clear();
     }
     setShowFuns(-1, "error input");
-    setShowFuns(1, "Strategy mode");
-    setShowFuns(2, "Observer mode");
-    setShowFuns(3, "Decorator mode");
-    setShowFuns(4, "Command mode");
+    setShowFuns(STRATEGY , "Strategy mode");
+    setShowFuns(OBSERVER , "Observer mode");
+    setShowFuns(DECORATOR, "Decorator mode");
+    setShowFuns(COMMANDS , "Command mode");
+    setShowFuns(ADAPTER  , "Adapter mode");
 }
 
 

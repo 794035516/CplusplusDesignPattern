@@ -1,12 +1,6 @@
-#ifndef _IOSTREAM_H_
 #include<iostream>
-#endif
-#ifndef _STDLIB_H_
 #include<stdlib.h>
-#endif
-#ifndef _STRATEGY_H_
 #include"include/strategy.h"
-#endif
 
 Animal::Animal(){
     flyAction = new FlyNope();
@@ -15,7 +9,6 @@ Animal::Animal(){
 
 Animal::Animal(FlyAction* flyAction, EatAction* eatAction)
 {
-    
     this->flyAction = flyAction;
     this->eatAction = eatAction;
 }
@@ -46,7 +39,7 @@ int Animal::performEat()
 
 int Animal::display()
 {
-    std::cout<<"I an an animal"<<std::endl;
+    std::cout<<"I am an animal"<<std::endl;
     return 0;
 }
 

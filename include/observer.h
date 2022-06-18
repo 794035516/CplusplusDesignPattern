@@ -1,9 +1,6 @@
-#ifndef _IOSTREAM_H_
+#pragma once
 #include<iostream>
-#endif
-#ifndef _VECTOR_H_
 #include<vector>
-#endif
 
 /*
 observer get message from Subject through method update
