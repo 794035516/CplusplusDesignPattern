@@ -1,9 +1,6 @@
-#ifndef _VECTOR_
+#pragma once
 #include<vector>
-#endif
-#ifndef _STRING_
 #include<string>
-#endif
 
 enum STATUS 
 {

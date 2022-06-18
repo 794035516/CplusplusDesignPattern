@@ -1,9 +1,6 @@
-#ifndef _IOSTREAM_H_
+#pragma once
 #include<iostream>
-#endif
-#ifndef _STRING_H_
 #include<string.h>
-#endif
 
 enum CupCapability
 {

@@ -1,6 +1,5 @@
-#ifndef _MAP_
+#pragma once
 #include<map>
-#endif
 
 
 
