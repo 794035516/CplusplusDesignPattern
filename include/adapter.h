@@ -18,10 +18,7 @@ class DogAdapter : public Turkey
     Dog* dog;
 };
 
-<<<<<<< HEAD
 /*
 facade mode is similar to the macro command ,so we can refer it 
 */
 
-=======
->>>>>>> 8e3d7339c05d64bdd46e3af0f70f34c61eb01523

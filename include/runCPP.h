@@ -6,6 +6,7 @@
 #include"decorator.h"
 #include"command.h"
 #include"adapter.h"
+#include"prototype.h"
 
 enum Mode
 {
@@ -13,7 +14,8 @@ enum Mode
    OBSERVER,
    DECORATOR,
    COMMANDS,
-   ADAPTER
+   ADAPTER,
+   PROTOTYPE
 };
 
 /* 
@@ -22,12 +24,13 @@ such as strategy mode, observer mode
 */
 namespace RunSpace
 {
-    int runError();
-    int runStrategy();
-    int runObserver();
-    int runDecorator();
-    int runCommands();
-    int runAdapter();
+   int runError();
+   int runStrategy();
+   int runObserver();
+   int runDecorator();
+   int runCommands();
+   int runAdapter();
+   int runPrototype();
 };
 
 class RunCPP

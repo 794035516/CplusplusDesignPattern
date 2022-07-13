@@ -177,6 +177,14 @@ int RunSpace::runAdapter()
     return 0;
 }
 
+int RunSpace::runPrototype()
+{
+    BeverageRecipeWithHook* coffee = new CoffeeRecipe();
+    BeverageRecipeWithHook* tea = new TeaRecipe();
+    coffee->prepareRecipe();
+    tea->prepareRecipe();
+    return 0;
+}
 
 void RunCPP::setDoFuns(int num, std::function<int()> fun)
 {
@@ -217,6 +225,7 @@ RunCPP::RunCPP()
     setDoFuns(DECORATOR, RunSpace::runDecorator);
     setDoFuns(COMMANDS , RunSpace::runCommands);
     setDoFuns(ADAPTER , RunSpace::runAdapter);
+    setDoFuns(PROTOTYPE , RunSpace::runPrototype);
     if(!showFuns.empty())
     {
         showFuns.clear();
@@ -227,6 +236,7 @@ RunCPP::RunCPP()
     setShowFuns(DECORATOR, "Decorator mode");
     setShowFuns(COMMANDS , "Command mode");
     setShowFuns(ADAPTER  , "Adapter mode");
+    setShowFuns(PROTOTYPE, "prototype mode");
 }
 
 

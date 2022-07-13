@@ -1,8 +1,6 @@
 #include<iostream>
 #include<map>
 #include"include/runCPP.h"
-int arr[] = {1, 2, 3, 4};
-
 
 int putMessage()
 {
@@ -12,7 +10,7 @@ int putMessage()
         printf("%d: run %s\n", it.first, it.second.c_str());
     }
     std::cout<<"-----------------------------"<<std::endl;
-    std::cout<<"input a number you want to rum the dessign pattern code: ";
+    std::cout<<"input a number you want to run the dessign pattern code: ";
     return 0;
 }
 
@@ -20,7 +18,6 @@ int getMessage()
 {
     int number = 0;
     std::cin>>number;
-    int len = sizeof(arr);
     for(std::pair<int, std::string> it: RunCPP::getInstance()->getAllShowFuns())
     {
         if(it.first == number)
