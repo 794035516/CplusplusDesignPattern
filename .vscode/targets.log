@@ -1,0 +1,416 @@
+make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --question
+makefile:29: *** missing separator.  Stop.
+
+# GNU Make 4.3
+# Built for Windows32
+# Copyright (C) 1988-2020 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Wed Jul 13 21:40:34 2022
+
+# Variables
+
+# environment
+SYSTEMDRIVE = C:
+# environment
+LC_ALL = C
+# environment
+USERPROFILE = C:\Users\79403
+# environment
+TMPDIR = C:\Users\79403\AppData\Local\Temp
+# environment
+LOCALAPPDATA = C:\Users\79403\AppData\Local
+# environment
+VSCODE_CWD = D:\code\project\CplusplusDesignPattern
+# environment
+MINGW_PREFIX = D:/app/Git/mingw64
+# environment
+SYSTEMROOT = C:\Windows
+# environment
+PROCESSOR_LEVEL = 25
+# environment
+PSMODULEPATH = C:\Program Files\WindowsPowerShell\Modules;C:\Windows\system32\WindowsPowerShell\v1.0\Modules
+# default
+MAKE_COMMAND := make.exe
+# automatic
+@D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
+# environment
+ACLOCAL_PATH = D:\app\Git\mingw64\share\aclocal;D:\app\Git\usr\share\aclocal
+# environment
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_11456_ITZJHOJUOOPKQMQC
+# environment
+ORIGINAL_TEMP = C:/Users/79403/AppData/Local/Temp
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# default
+.VARIABLES := 
+# environment
+PWD = D:/code/project/CplusplusDesignPattern
+# automatic
+%D = $(patsubst %/,%,$(patsubst %\,%,$(dir $%)))
+# environment
+HOSTNAME = ljx-win
+# environment
+OLDPWD = D:/code/project
+# automatic
+^D = $(patsubst %/,%,$(patsubst %\,%,$(dir $^)))
+# automatic
+%F = $(notdir $%)
+# environment
+VSCODE_CODE_CACHE_PATH = C:\Users\79403\AppData\Roaming\Code\CachedData\92d25e35d9bf1a6b16f7d0758f25d48ace11e5b9
+# environment
+SSH_ASKPASS = D:/app/Git/mingw64/bin/git-askpass.exe
+# environment
+LANG = C
+# default
+.LOADED := 
+# environment
+TMP = C:\Users\79403\AppData\Local\Temp
+# default
+.INCLUDE_DIRS = .
+# makefile
+MAKEFLAGS = pqrR
+# environment
+PKG_CONFIG_PATH = D:\app\Git\mingw64\lib\pkgconfig;D:\app\Git\mingw64\share\pkgconfig
+# environment
+ONEDRIVE = C:\Users\79403\OneDrive
+# makefile
+CURDIR := d:/code/project/CplusplusDesignPattern
+# environment
+MSYSTEM_CARCH = x86_64
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# automatic
+*D = $(patsubst %/,%,$(patsubst %\,%,$(dir $*)))
+# environment
+PROGRAMFILES = C:\Program Files
+# environment
+MFLAGS = -pqrR
+# default
+.SHELLFLAGS := -c
+# environment
+COMMONPROGRAMW6432 = C:\Program Files\Common Files
+# automatic
++D = $(patsubst %/,%,$(patsubst %\,%,$(dir $+)))
+# makefile (from 'makefile', line 1)
+MAKEFILE_LIST := makefile
+# automatic
+@F = $(notdir $@)
+# environment
+VSCODE_PID = 11456
+# automatic
+?D = $(patsubst %/,%,$(patsubst %\,%,$(dir $?)))
+# environment
+MINGW_CHOST = x86_64-w64-mingw32
+# automatic
+*F = $(notdir $*)
+# environment
+MANPATH = D:\app\Git\mingw64\local\man;D:\app\Git\mingw64\share\man;D:\app\Git\usr\local\man;D:\app\Git\usr\share\man;D:\app\Git\usr\man;D:\app\Git\share\man
+# automatic
+<D = $(patsubst %/,%,$(patsubst %\,%,$(dir $<)))
+# environment
+VSCODE_NLS_CONFIG = {"locale":"zh-cn","availableLanguages":{},"_languagePackSupport":true}
+# environment
+ONEDRIVECONSUMER = C:\Users\79403\OneDrive
+# default
+MAKE_HOST := Windows32
+# makefile (from 'makefile', line 1)
+OBJS = runCPP.o   strategy.o    observer.o   decorator.o  command.o  adapter.o prototype.o
+# environment
+PROGRAMDATA = C:\ProgramData
+# environment
+INFOPATH = D:\app\Git\usr\local\info;D:\app\Git\usr\share\info;D:\app\Git\usr\info;D:\app\Git\share\info
+# makefile
+SHELL = D:/app/Git/usr/bin/sh.exe
+# environment
+ORIGINAL_PATH = D:\app\Git\mingw64\bin;D:\app\Git\usr\bin;C:\Users\79403\bin;D:\code\virtualMachineUse\machine\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Users\79403\AppData\Local\Microsoft\WindowsApps;D:\app\Microsoft VS Code\bin;D:\code\msys2\mingw64\bin
+# environment
+HOMEPATH = \Users\79403
+# default
+MAKECMDGOALS := all
+# environment
+SHLVL = 2
+# environment
+DRIVERDATA = C:\Windows\System32\Drivers\DriverData
+# environment
+COMSPEC = C:\Windows\system32\cmd.exe
+# environment
+WINDIR = C:\Windows
+# environment
+MAKELEVEL := 0
+# default
+MAKE = $(MAKE_COMMAND)
+# environment
+PATH = C:\Users\79403\bin;D:\app\Git\mingw64\bin;D:\app\Git\usr\local\bin;D:\app\Git\usr\bin;D:\app\Git\usr\bin;D:\app\Git\mingw64\bin;D:\app\Git\usr\bin;C:\Users\79403\bin;D:\code\virtualMachineUse\machine\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Users\79403\AppData\Local\Microsoft\WindowsApps;D:\app\Microsoft VS Code\bin;D:\code\msys2\mingw64\bin;D:\app\Git\usr\bin\vendor_perl;D:\app\Git\usr\bin\core_perl
+# environment
+COMPUTERNAME = LJX-WIN
+# default
+MAKEFILES := 
+# automatic
+^F = $(notdir $^)
+# environment
+MINGW_PACKAGE_PREFIX = mingw-w64-x86_64
+# environment
+PROMPT = $P$G
+# environment
+LOGONSERVER = \\LJX-WIN
+# environment
+USERNAME = 79403
+# environment
+TERM_PROGRAM = mintty
+# environment
+COMMONPROGRAMFILES = C:\Program Files\Common Files
+# automatic
+?F = $(notdir $?)
+# environment
+PROGRAMW6432 = C:\Program Files
+# environment
+MSYSTEM_CHOST = x86_64-w64-mingw32
+# environment
+PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+# automatic
++F = $(notdir $+)
+# environment
+CONFIG_SITE = D:/app/Git/etc/config.site
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# environment
+USERDOMAIN = LJX-WIN
+# environment
+GNUMAKEFLAGS := 
+# environment
+OS = Windows_NT
+# environment
+__COMPAT_LAYER = DetectorsAppHealth
+# environment
+MSYSTEM_PREFIX = D:/app/Git/mingw64
+# makefile
+.DEFAULT_GOAL := main
+# environment
+DISPLAY = needs-to-be-defined
+# default
+MAKE_VERSION := 4.3
+# environment
+PROGRAMFILES(X86) = C:\Program Files (x86)
+# environment
+USERDOMAIN_ROAMINGPROFILE = LJX-WIN
+# environment
+NUMBER_OF_PROCESSORS = 16
+# environment
+PUBLIC = C:\Users\Public
+# environment
+_ = D:/app/Microsoft VS Code/Code.exe
+# environment
+APPDATA = C:\Users\79403\AppData\Roaming
+# environment
+HOMEDRIVE = C:
+# environment
+LC_CTYPE = zh_CN.UTF-8
+# environment
+PROCESSOR_ARCHITECTURE = AMD64
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+MSYSTEM = MINGW64
+# environment
+HOME = C:\Users\79403
+# environment
+COMMONPROGRAMFILES(X86) = C:\Program Files (x86)\Common Files
+# environment
+EXEPATH = D:\app\Git
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+TEMP = C:\Users\79403\AppData\Local\Temp
+# environment
+TERM = xterm
+# environment
+VSCODE_IPC_HOOK = \\.\pipe\65f26bc0bf9de56cbb525d38f6dd0be7-1.69.0-main-sock
+# default
+.RECIPEPREFIX := 
+# environment
+ORIGINAL_TMP = C:/Users/79403/AppData/Local/Temp
+# automatic
+<F = $(notdir $<)
+# environment
+PLINK_PROTOCOL = ssh
+# default
+SUFFIXES := 
+# environment
+ALLUSERSPROFILE = C:\ProgramData
+# environment
+SESSIONNAME = Console
+# environment
+VSCODE_CLI = 1
+# environment
+ELECTRON_NO_ATTACH_CONSOLE = 1
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync load
+# environment
+PROCESSOR_REVISION = 4401
+# environment
+TERM_PROGRAM_VERSION = 3.6.1
+# environment
+PROCESSOR_IDENTIFIER = AMD64 Family 25 Model 68 Stepping 1, AuthenticAMD
+# variable set hash-table stats:
+# Load=121/1024=12%, Rehash=0, Collisions=11/133=8%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (key d:/code/project/CplusplusDesignPattern, mtime 1657719437): 25 files, no impossibilities.
+
+# 25 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+# Not a target:
+adapter.cpp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+prototype.o: prototype.cpp
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'makefile', line 27):
+	g++ -c $^
+
+runCPP.o: runCPP.cpp
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'makefile', line 9):
+	g++ -c $^
+
+adapter.o: adapter.cpp
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'makefile', line 24):
+	g++ -c $^
+
+# Not a target:
+observer.cpp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+command.cpp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+decorator.o: decorator.cpp
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'makefile', line 18):
+	g++ -c $^
+	
+
+strategy.o: strategy.cpp
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'makefile', line 12):
+	g++ -c $^
+
+observer.o: observer.cpp
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'makefile', line 15):
+	g++ -c $^
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+strategy.cpp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+all:
+#  Command line target.
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+main.cpp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+main: main.cpp runCPP.o strategy.o observer.o decorator.o command.o adapter.o prototype.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'makefile', line 6):
+	g++ -g $^ -o $@
+
+command.o: command.cpp
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'makefile', line 21):
+	g++ -c $^	
+
+# Not a target:
+makefile:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+prototype.cpp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+decorator.cpp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+runCPP.cpp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# files hash-table stats:
+# Load=20/1024=2%, Rehash=0, Collisions=0/43=0%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 29 / storage = 284 B / avg = 9 B
+# current buf: size = 8162 B / used = 284 B / count = 29 / avg = 9 B
+
+# strcache performance: lookups = 63 / hit rate = 53%
+# hash-table stats:
+# Load=29/8192=0%, Rehash=0, Collisions=0/63=0%
+# Finished Make data base on Wed Jul 13 21:40:34 2022
+
+ 

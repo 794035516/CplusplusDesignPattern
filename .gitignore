@@ -2,4 +2,6 @@
 # git personal token access   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
 
 *.o
+*.exe
+a.out
 main

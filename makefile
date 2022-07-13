@@ -26,5 +26,6 @@ adapter.o : adapter.cpp
 prototype.o : prototype.cpp
 	g++ -c $^
 
+.PHONY : clean
 clean:
 	rm -f main *.o 

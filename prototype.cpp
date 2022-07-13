@@ -33,14 +33,10 @@ int CoffeeRecipe::addCondiments()
 {
     std::cout<<"ask customer wheather add condiments or not(0: add, 1 not) : ";
     std::cin>>addFlag;
-    //assert(addFlag >= 0 && addFlag <= 1);
+    assert(addFlag == 0 || addFlag == 1);
     if(addFlag == 0)
     {
         std::cout<<"add some condiments"<<std::endl;
-    }
-    else
-    {
-        std::cout<<"not add"<<std::endl;
     }
     return 0;
 }

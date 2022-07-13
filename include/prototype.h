@@ -4,7 +4,7 @@ class BeverageRecipeWithHook
 {
  public:
     int prepareRecipe();
-    bool addFlag = false;
+    int addFlag = 0;
 
  protected:
     int boilWater();

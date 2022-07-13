@@ -1,0 +1,6 @@
+make.exe --dry-run --keep-going --print-directory
+make: Entering directory 'd:/code/project/CplusplusDesignPattern'
+make: Leaving directory 'd:/code/project/CplusplusDesignPattern'
+ 
+makefile:29: *** missing separator.  Stop.
+
